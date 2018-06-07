@@ -105,8 +105,8 @@ class MusicLibraryController
 #    self.new_music_importer.each do |song|
 #      song_list << song
 #    end
-    
-    puts self.list_songs
+
+#    puts self.list_songs
     puts "Which song number would you like to play?"
     input = gets.strip
 
