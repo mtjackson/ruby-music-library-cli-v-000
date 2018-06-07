@@ -64,6 +64,8 @@ class MusicLibraryController
     Artists.all.select do |artist|
       if artist.name == input
         artist.songs
+      end
+    end
 #    if self.list_artists.include?(input)
 #      puts input.songs
 #    end
