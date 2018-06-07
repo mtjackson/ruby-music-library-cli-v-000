@@ -76,8 +76,5 @@ class MusicLibraryController
       puts "#{i}. #{song.name} - #{song.genre.name}"
       i+= 1
     end
-#    if self.list_artists.include?(input)
-#      puts input.songs
-#    end
   end
 end
