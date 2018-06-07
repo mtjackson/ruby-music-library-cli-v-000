@@ -61,7 +61,8 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     iput = gets.strip
-    if Artists.all.name.include?(input)
+    Artists.all.select do |artist|
+      if artist.name == input
 #    if self.list_artists.include?(input)
 #      puts input.songs
 #    end
