@@ -59,6 +59,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
+    artist_for_list = []
     puts "Please enter the name of an artist:"
     input = gets.strip
     Artist.all.select do |artist|
