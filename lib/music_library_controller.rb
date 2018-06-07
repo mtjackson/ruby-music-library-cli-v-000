@@ -99,16 +99,17 @@ class MusicLibraryController
   end
 
   def play_song
+    i = 1
+    song_list = []
+
+    self.new_music_importer.each do |song|
+      song_list << song
+    end
     puts self.list_songs
     puts "Which song number would you like to play?"
     input = gets.strip
 
-  #  i = 1
-  #  song_list = []
 
-  #  self.new_music_importer.each do |song|
-  #    song_list << song
-  #  end
 
   #  if input <= self.song_list.length
   #    puts "Playing #{input}"
