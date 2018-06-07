@@ -112,8 +112,8 @@ class MusicLibraryController
 
 
 
-  #  if input <= self.song_list.length
-  #    puts "Playing #{input}"
+    if input <= self.song_list.length
+      puts "Playing #{song_list[input - 1]}"
   #  end
   #    puts "Playing #{input}"
   #  end
