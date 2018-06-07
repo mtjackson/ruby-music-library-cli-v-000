@@ -102,9 +102,7 @@ class MusicLibraryController
     i = 1
     song_list = []
 
-    self.new_music_importer.each do |song|
-      song_list << song
-    end
+    self.new_music_importer.each{|song| song_list << song}
     song_list = song_list.sort_by{|song| song.name}
 
 #    puts self.list_songs
