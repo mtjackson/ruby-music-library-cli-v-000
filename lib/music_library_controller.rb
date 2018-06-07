@@ -103,6 +103,7 @@ class MusicLibraryController
     input = gets.strip
     if self.list_songs_by_artist.include?(input) || self.list_songs_by_genre.include?(input)
       puts "Playing "
+    end
   end
 
 end
