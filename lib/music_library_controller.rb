@@ -105,7 +105,6 @@ class MusicLibraryController
     self.new_music_importer.each{|song| song_list << song}
     song_list = song_list.sort_by{|song| song.name}
 
-#    puts self.list_songs
     puts "Which song number would you like to play?"
     input = gets.strip
     input = input.to_i
@@ -114,11 +113,6 @@ class MusicLibraryController
     if input > 1 && input <= song_list.length
       puts "Playing #{song_list[i].name} by #{song_list[i].artist.name}"
     end
-  #{}    puts "Playing #{input}"
-  #  end
-#    if self.list_songs_by_artist.include?(input) || self.list_songs_by_genre.include?(input)
-#      puts "Playing "
-#    end
   end
 
 end
