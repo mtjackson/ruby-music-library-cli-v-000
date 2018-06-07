@@ -107,7 +107,6 @@ class MusicLibraryController
     end
     song_list = song_list.sort_by{|song| song.name}
 
-
 #    puts self.list_songs
     puts "Which song number would you like to play?"
     input = gets.strip
