@@ -92,7 +92,7 @@ class MusicLibraryController
 
     genre_song_list = genre_song_list.sort_by{|song| song.name}
     i = 1
-    artist_song_list.each do |song|
+    genre_song_list.each do |song|
       puts "#{i}. #{song.name} - #{song.genre.name}"
       i+= 1
     end
