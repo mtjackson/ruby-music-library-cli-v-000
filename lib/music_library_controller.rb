@@ -40,7 +40,7 @@ class MusicLibraryController
     end
   end
 
-  def list_artists
+  def list_artists()
     i = 1
     artist_list = Artist.all.sort_by{|artist| artist.name}
     artist_list.each do |artist|
