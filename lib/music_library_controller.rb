@@ -114,7 +114,7 @@ class MusicLibraryController
 
     if input <= self.song_list.length
       puts "Playing #{song_list[input - 1]}"
-  #  end
+    end
   #    puts "Playing #{input}"
   #  end
 #    if self.list_songs_by_artist.include?(input) || self.list_songs_by_genre.include?(input)
