@@ -65,7 +65,7 @@ class MusicLibraryController
     Artist.all.select do |artist|
       if artist.name == input
         artist.songs.each do |song|
-        artist_song_list << artist.songs
+          artist_song_list << sogn
       end
     end
 
