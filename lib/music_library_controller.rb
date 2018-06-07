@@ -40,7 +40,7 @@ class MusicLibraryController
     end
   end
 
-  def list_artists()
+  def list_artists
     i = 1
     artist_list = Artist.all.sort_by{|artist| artist.name}
     artist_list.each do |artist|
@@ -61,6 +61,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     iput = gets.strip
+    if Artists.all.name.include?(input)
 #    if self.list_artists.include?(input)
 #      puts input.songs
 #    end
