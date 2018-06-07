@@ -111,8 +111,7 @@ class MusicLibraryController
     input = gets.strip
     input = input.to_i
     i = input - 1
-
-
+    
     if input <= song_list.length
       puts "Playing #{song_list[input].name} by #{song_list[input].artist.name}"
     end
