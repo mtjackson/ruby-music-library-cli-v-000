@@ -102,6 +102,8 @@ class MusicLibraryController
     puts self.list_songs
     puts "Which song number would you like to play?"
     input = gets.strip
+
+    options = []
     if input <= self.list_songs.length
   #    puts "Playing #{input}"
   #  end
