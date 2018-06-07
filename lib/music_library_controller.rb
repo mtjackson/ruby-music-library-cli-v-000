@@ -105,6 +105,8 @@ class MusicLibraryController
     self.new_music_importer.each do |song|
       song_list << song
     end
+    artist_song_list = artist_song_list.sort_by{|song| song.name}
+
 
 #    puts self.list_songs
     puts "Which song number would you like to play?"
