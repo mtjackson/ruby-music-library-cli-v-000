@@ -115,4 +115,6 @@ class MusicLibraryController
     end
   end
 
+  if gets.strip == "list songs"
+
 end
