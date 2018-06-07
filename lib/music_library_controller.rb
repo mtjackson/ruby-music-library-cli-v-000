@@ -109,7 +109,8 @@ class MusicLibraryController
     self.new_music_importer.each do |song|
       song_list << song
     end
-    if input <= self.list_songs.length
+
+    if input <= self.song_list.length
   #    puts "Playing #{input}"
   #  end
 #    if self.list_songs_by_artist.include?(input) || self.list_songs_by_genre.include?(input)
