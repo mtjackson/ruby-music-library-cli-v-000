@@ -84,8 +84,8 @@ class MusicLibraryController
     input = gets.strip
     Genre.all.select do |genre|
       if genre.name == input
-        artist.songs.each do |song|
-          artist_song_list << song
+        genre.songs.each do |song|
+          genre_song_list << song
         end
       end
     end
