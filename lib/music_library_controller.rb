@@ -82,8 +82,8 @@ class MusicLibraryController
     genre_song_list = []
     puts "Please enter the name of an genre:"
     input = gets.strip
-    Artist.all.select do |artist|
-      if artist.name == input
+    Genre.all.select do |genre|
+      if genre.name == input
         artist.songs.each do |song|
           artist_song_list << song
         end
