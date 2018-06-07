@@ -80,7 +80,7 @@ class MusicLibraryController
 
   def list_songs_by_genre
     genre_song_list = []
-    puts "Please enter the name of an genre:"
+    puts "Please enter the name of a genre:"
     input = gets.strip
     Genre.all.select do |genre|
       if genre.name == input
@@ -97,5 +97,5 @@ class MusicLibraryController
       i+= 1
     end
   end
-  
+
 end
