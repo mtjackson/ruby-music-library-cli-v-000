@@ -19,6 +19,7 @@ class MusicLibraryController
     while input = gets.strip
       if input == "list songs"
         self.list_songs
+      elsif input == "list artsts"
       elsif input == "exit"
         break
       end
