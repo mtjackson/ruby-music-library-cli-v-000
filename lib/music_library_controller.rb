@@ -28,6 +28,7 @@ class MusicLibraryController
       elsif input == "list genre"
         self.list_songs_by_genre
       elsif input == "play song"
+        self.play_song
       elsif input == "exit"
         break
       end
