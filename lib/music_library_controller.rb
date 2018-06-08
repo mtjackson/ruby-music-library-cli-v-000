@@ -20,6 +20,7 @@ class MusicLibraryController
       if input == "list songs"
         self.list_songs
       elsif input == "list artsts"
+        self.list_artists
       elsif input == "exit"
         break
       end
